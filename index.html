@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="el">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aρχική Σελίδα</title>
+		<link rel="icon" href="images/logo.ico" type="image/Iconic">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slider.css"/>
+		<script src="js/myScript.js"></script>
+	</head>
+	<body>
+	​
+		<!-- Navigation -->
+		<nav class="w3-bar w3-black">
+			<a href="#home" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
+			<div class="w3-dropdown-hover">
+			<button class="w3-button">Εκθέματα</button>
+				 <div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="html/aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
+					<a href="html/nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
+					<a href="html/artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
+				</div>
+			</div>
+			<div class="w3-dropdown-hover">
+			<button class="w3-button">Έργα Τέχνης</button>
+			   <div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="html/mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
+					<a href="html/romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
+					<a href="html/ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
+				</div>
+			 </div>
+			<a href="html/contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<div class="w3-right">
+				<input type="text" class="w3-bar-item w3-input w3-black w3-mobile" placeholder="Search.."><a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+			</div>
+		</nav>
+		​
+		<!-- Museum Description -->
+		<section id="home" class="w3-container w3-center w3-content" style="max-width:1000px">
+			<audio src="sounds/museum.mp3"></audio>
+			<div>
+				 <a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+			 </div>
+			<h1 class="w3-wide">To Μουσείο του Λούβρου</h1>
+			<hr>
+
+			<p class="w3-justify">Το <b>Μουσείο του Λούβρου</b> (Musee du Louvre) είναι ένα από τα μεγαλύτερα και παλαιότερα μουσεία τέχνης στον κόσμο. Βρίσκεται στην καρδιά του πρώτου διαμερίσματος του Παρισιού στις όχθες του Σηκουάνα. Το Λούβρο έγινε μουσείο μετά τη Γαλλική Επανάσταση. Πριν από αυτό, ήταν το παλάτι του Γάλλου βασιλιά, και πιο πριν ήταν απλά ένα φρούριο. Συγκεκριμένα, το κτίριο που στεγάζει το μουσείο χτίστηκε σταδιακά κατά τη διάρκεια των αιώνων, το οποίο άλλαξε σημαντικά τη μορφή του. Το μουσείο διαθέτει μια συλλογή με περισσότερα από ένα εκατομμύριο έργα τέχνης, συμπεριλαμβανομένων περίπου 35.000 έργων τέχνης που εκτίθενται, τα οποία διανέμονται στις 3 πτέρυγες του πρώην παλατιού <a href="https://www.parisi-info.com/2014/11/blog-post.html?fbclid=IwAR0EpMyKFrIfiPCfNw5ElD6GAemQIuR9_vCngbHdGWP0Lj53i7kmlF6wcO0" target="_blank">[1]</a>.</p>
+			<hr>
+			
+			<div id="slider">  
+				<div class="slides">  
+					<img src="images/slider/musem_2.jpg" width="2000" height="500"/>
+				</div>
+
+				<div class="slides">  
+					<img src="images/slider/inside.jpg" width="2000" height="500"/>
+				</div>
+
+				<div class="slides">  
+					<img src="images/slider/garden.jpg" width="2000" height="500"/>
+				</div>
+				
+				<div class="slides">  
+					<img src="images/slider/musem.jpg" width="2000" height="500"/>
+				</div>
+				
+				<div class="slides">  
+					<img src="images/slider/inside_2.jpg" width="2000" height="500"/>
+				</div>
+				
+				<div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+			</div>
+
+			<p class="w3-justify">Το μουσείο φιλοξενεί διάφορες συλλογές από την αρχαιότητα έως τα μέσα του 19ου αιώνα.</p>
+			
+			<p class="w3-justify">Η συλλογή του Μουσείου του Λούβρου ιδρύθηκε για πρώτη φορά από τον Βασιλιά Francis I. τον 16ο αιώνα. Ένα από τα έργα τέχνης που αγόρασε ήταν ο πιο διάσημος πίνακας «Μόνα Λίζα». Χάρη στις δωρεές και τις αγορές από τον βασιλιά, η συλλογή αυξήθηκε σταθερά. Το 1793, κατά τη διάρκεια της Γαλλικής Επανάστασης, ιδιωτικές βασιλικές συλλογές άνοιξαν στο κοινό.</p>
+			
+			<p class="w3-justify">Τα πιο διάσημα έργα τέχνης στο μουσείο είναι η <b>Αφροδίτη της Μήλου</b>, <b>η Nίκη της Σαμοθράκης</b>, o θνήσκων σκλάβος από τον Μιχαήλ Άγγελο και η <b>Μόνα Λίζα</b> του Λεονάρντο ντα Βίντσι.</p>
+			
+			<p class="w3-justify">Η πιο πρόσφατη προσθήκη στο Λούβρο ήταν η κατασκευή της γυάλινης πυραμίδας. Η πυραμίδα χτίστηκε το 1989 από το διάσημo Αμερικανό αρχιτέκτονα I.M. Pei. Η γυάλινη πυραμίδα του Pei επιτρέπει το φως του ήλιου να φτάσει στο υπόγειο.</p>
+		</section>
+		​
+		<!-- Information -->
+		<section class="w3-row-padding w3-center w3-light-grey">
+			<div class="w3-third">
+				<p>Χάρτης</p>
+				<iframe width="350" height="250" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.496405115677!2d2.337644!3d48.8606111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb975fcfa192f84d4!2zzpzOv8-Fz4POtc6vzr8gz4TOv8-FIM6bzr_Pjc6yz4HOv8-F!5e0!3m2!1sel!2sgr!4v1620222301590!5m2!1sel!2sgr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div class="w3-third">
+				<p>YouΤube Video</p>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/D1UM6QufeVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="w3-third">
+				<p>360&deg εικόνα</p>
+				<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
+			</div>
+		</section>
+		​
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://gr.pinterest.com/igori/musee-du-louvre-paris/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.flickr.com/photos/29248605@N07/albums/72157665172547927/" target="_blank"><i class="fa fa-flickr"></i></a>
+			<a href="https://www.linkedin.com/company/musee-du-louvre/" target="_blank"><i class="fa fa-linkedin"></i></a>
+			
+			<p class="w3-medium">
+			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> 
+			<br>
+			Edited by <a href = "mailto:ct20044@ct.aegean.gr">Efstratia Kazi</a>
+			
+			<address class="w3-medium">
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>		
+			</address>
+			</p>
+		</footer>
+		
+		<script>
+			var index = 0;
+			var slides = document.querySelectorAll(".slides");
+			var dot = document.querySelectorAll(".dot");
+
+			function changeSlide(){
+
+			  if(index<0){
+				index = slides.length-1;
+			  }
+			  
+			  if(index>slides.length-1){
+				index = 0;
+			  }
+			  
+			  for(let i=0;i<slides.length;i++){
+				slides[i].style.display = "none";
+				dot[i].classList.remove("active");
+			  }
+			  
+			  slides[index].style.display= "block";
+			  dot[index].classList.add("active");
+			  
+			  index++;
+			  
+			  setTimeout(changeSlide,2000);
+			  
+			}
+
+			changeSlide();
+		</script>
+		​
+	</body>
+</html>
