@@ -39,13 +39,17 @@
 			</div>
 		</nav>
 		​
-		<!-- Museum Description -->
+		<!-- Description -->
 		<section id="home" class="w3-container w3-center w3-content" style="max-width:1000px">
-			<audio src="sounds/museum.mp3"></audio>
-			<div>
-				 <a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
-			 </div>
-			<h1 class="w3-wide">To Μουσείο του Λούβρου</h1>
+
+			<h1 id="home" class="w3-wide">
+				To Μουσείο του Λούβρου
+				<audio id="player" src="sounds/museum.mp3"></audio>
+				<div class="w3-right">
+				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-50x'></i></a>
+				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
+				</div>
+			</h1>
 			<hr>
 
 			<p class="w3-justify">Το <b>Μουσείο του Λούβρου</b> (Musee du Louvre) είναι ένα από τα μεγαλύτερα και παλαιότερα μουσεία τέχνης στον κόσμο. Βρίσκεται στην καρδιά του πρώτου διαμερίσματος του Παρισιού στις όχθες του Σηκουάνα. Το Λούβρο έγινε μουσείο μετά τη Γαλλική Επανάσταση. Πριν από αυτό, ήταν το παλάτι του Γάλλου βασιλιά, και πιο πριν ήταν απλά ένα φρούριο. Συγκεκριμένα, το κτίριο που στεγάζει το μουσείο χτίστηκε σταδιακά κατά τη διάρκεια των αιώνων, το οποίο άλλαξε σημαντικά τη μορφή του. Το μουσείο διαθέτει μια συλλογή με περισσότερα από ένα εκατομμύριο έργα τέχνης, συμπεριλαμβανομένων περίπου 35.000 έργων τέχνης που εκτίθενται, τα οποία διανέμονται στις 3 πτέρυγες του πρώην παλατιού <a href="https://www.parisi-info.com/2014/11/blog-post.html?fbclid=IwAR0EpMyKFrIfiPCfNw5ElD6GAemQIuR9_vCngbHdGWP0Lj53i7kmlF6wcO0" target="_blank">[1]</a>.</p>
@@ -146,7 +150,7 @@
 			  
 			  index++;
 			  
-			  setTimeout(changeSlide,2000);
+			  setTimeout(changeSlide,5000);
 			  
 			}
 
