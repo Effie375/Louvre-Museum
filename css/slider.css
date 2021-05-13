@@ -7,6 +7,7 @@
   }
 }
 
+
 #slider{
   margin:0 auto;
   width:80%;
@@ -16,7 +17,7 @@
 .slides{
   overflow:hidden;
   animation-name:fade;
-  animation-duration:1s;
+  animation-duration:2s;
   display:none;
 }
 
@@ -28,9 +29,16 @@ img{
   margin:0 auto;
   text-align:center;
 }
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
 
 .active{
-  background:black;
+  background:rgb(100, 100, 100);
 }
 
 @media (max-width:567px){
@@ -38,4 +46,12 @@ img{
     width:100%;
 
   }
+}
 
+#heading{
+  display:block;
+  text-align:center;
+  font-size:2em;
+  margin:10px 0px;
+
+}

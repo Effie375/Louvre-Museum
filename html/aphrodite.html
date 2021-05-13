@@ -8,17 +8,19 @@
 		<title>Αφροδίτη της Μήλου</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script src="../js/language.js"></script>
+		<script src="../js/search.js"></script>
 	</head>
 	<body>
-	​
+		
 		<!-- Navigation -->
 		<nav class="w3-bar w3-black">
 			<a href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
 			<div class="w3-dropdown-hover">
 			<button class="w3-button">Εκθέματα</button>
 				 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="#home" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
+					<a class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
 					<a href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
 					<a href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
 				</div>
@@ -32,15 +34,27 @@
 				</div>
 			 </div>
 			<a href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			
+			<!-- Change language -->
 			<div class="w3-right">
-				<input type="text" class="w3-bar-item w3-input w3-black w3-mobile" placeholder="Search.."><a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
+				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
+			</div>
+			
+			<!-- Search -->
+			<div class="w3-right">
+				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
+					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
+					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
+				</form>
 			</div>
 		</nav>
 		​
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
 			
-			<h1 id="home" class="w3-wide">
+			<h1 class="w3-wide">
 				H Αφροδίτη της Μήλου
 				<audio id="player" src="../sounds/aphrodite.mp3"></audio>
 				<div class="w3-right">
@@ -95,6 +109,24 @@
 				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>		
 			</address>
 			</p>
-		</footer>	
+		</footer>
+		<script>	
+			// Language function
+			var greek = document.getElementById('el_click'),
+				english = document.getElementById('en_click'),
+				el_txt = document.querySelectorAll('#el'),
+				en_txt = document.querySelectorAll('#en'),
+				nb_el = el_txt.length,
+				nb_en = en_txt.length;
+			
+			greek.addEventListener('click', function() {
+				langue(greek,english);
+			}, false);
+
+			english.addEventListener('click', function() {
+			langue(english,greek);
+			}, false);
+			init();
+		</script>		
 	</body>
 </html>
