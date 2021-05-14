@@ -135,6 +135,76 @@ setTimeout(changeSlide, 5000);
 
 Κάνοντας κλικ πάνω στα εικονίδια, ανοίγει νέο παράθυρο στο αντίστοιχο μέσο επικοινωνίας που αφορά το μουσείο.
 
+## Head tags
+
+H πρώτη ενότητα μιας HTML σελίδας είναι τα head tags, τα οποία αποτελούν τον πρόλογο για την HTML σελίδα, δηλαδή παρέχουν πληροφορίες στον Βrowser.
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aρχική Σελίδα</title>
+    <link rel="icon" href="images/logo.ico" type="image/Iconic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+    <script src="js/myScript.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/search.js"></script>
+</head>
+```
+
+Το charset καθορίζει την κωδικοποίηση χαρακτήρων για το έγγραφο HTML. Ενώ UTF-8, χρειάζεται διότι καλύπτει σχεδόν όλους τους χαρακτήρες και τα σύμβολα στον κόσμο.
+
+```html
+<meta charset="UTF-8">
+```
+
+Η παρακάτω μέθοδος χρησιμοποιείται για να μην υπάρχει στατικός σχεδιασμός και σταθερό μέγεθος και να προσαρμόζεται ανάλογα τη συσκευή (κινητό, tablet).
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Ορισμός για τον τίτλο της ιστοσελίδας. Αλλάζει ανάλογα με τη στιγμιαία σελίδα, με τη βοήθεια του navbar.
+
+```html
+<title>Αρχική σελίδα</title>
+```
+
+Όρισμα του εικονιδίου της ιστοσελίδας (favicon). Στην ιστοσελίδα χρησιμοποιήθηκε ως εικονίδιο ένα μουσείο.
+
+```html
+<link rel="icon" href="images/logo.ico" type="image/Iconic">
+```
+
+Χρησιμοποίηση βιβλιοθήκης ανοιχτού κώδικα από το **cdnjs.cloudflare.com**.
+
+```html
+<link rel="styleheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/4.6.3/css/font-awesome.min.css">
+```
+
+Δήλωση εξωτερικών συνδέσμων για τα css αρχεία με όνομα style και slider.
+
+```html
+<link rel="styleheet" type="text/css" href="css/style.css">
+<link rel="styleheet" type="text/css" href="css/slider.css">
+```
+
+Δήλωση εξωτερικών συνδέσμων για JavaScript αρχεία με όνομα MyScript, language, slider και search.
+
+```html
+<script src="js/MyScript.js"></script> 
+<script src="js/language.js"></script> 
+<script src="js/slider"></script> 
+<script src="js/search"></script> 
+```
+
+## Body tags
+
+Η δεύτερη ενότητα μιας HTML σελίδας ονομάζεται body και ορίζεται με το ανοιχτό tag <body> και την κλειστό tag </body>. Το ζευγάρι των tags <body>...</body> ορίζουν το κυρίως περιεχόμενο της σελίδας, περιέχουν όλα τα περιεχόμενα ενός εγγράφου HTML, όπως επικεφαλίδες, παραγράφους, εικόνες, υπερσυνδέσμους, πίνακες, λίστες κ.λπ.
+
 ## Οδηγίες για Συνεισφορά
 
-Πριν στείλεις pull requests, σιγουρεύσου ότι διάβασες τις παρακάτω οδηγίες για συνεισφορά. Σε περίπτωση που έχεις απορίες για την συνεισφορά, μπορείς να δημιουργήσεις [issue](https://github.com/Effie375/louvre-museum/issues/new).
+Σε περίπτωση που έχεις απορίες για την συνεισφορά, μπορείς να δημιουργήσεις [issue](https://github.com/Effie375/louvre-museum/issues/new).
