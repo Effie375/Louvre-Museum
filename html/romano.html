@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="el">
-
 	<head>
+		<title>Μάχη του Σαν Ρομάνο</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Μάχη του Σαν Ρομάνο</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script src="../js/language.js"></script>
+		<script src="../js/search.js"></script>
 	</head>
 	<body>
-	​
 		<!-- Navigation -->
 		<nav class="w3-bar w3-black">
-			<a href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
+			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
+			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Exhibits -->
 			<div class="w3-dropdown-hover">
-			<button class="w3-button">Εκθέματα</button>
-				 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-					<a href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-					<a href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
+				<button id="el" class="w3-button">Εκθέματα</button>
+				<button id="en" class="w3-button">Exhibits</button>
+					<div class="w3-dropdown-content w3-bar-block w3-card-4">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
+					</div>		
+			</div>
+			<!-- Work of arts -->
+			<div class="w3-dropdown-hover">
+				<button id="el" class="w3-button">Έργα Τέχνης</button>
+				<button id="en" class="w3-button">Work of arts</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
+					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
+					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
+					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
+					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
+					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
 				</div>
 			</div>
-			<div class="w3-dropdown-hover">
-			<button class="w3-button">Έργα Τέχνης</button>
-			   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a href="#home" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-				</div>
-			 </div>
-			<a href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<!-- Contact -->
+			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
+			<!-- Change language -->
 			<div class="w3-right">
-				<input type="text" class="w3-bar-item w3-input w3-black w3-mobile" placeholder="Search.."><a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
+				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
+			</div>
+			<!-- Search -->
+			<div class="w3-right">
+				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
+					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
+					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
+				</form>
 			</div>
 		</nav>
-		​
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
-			<h1 id="home" class="w3-wide">
+			<h1 id="el" class="w3-wide">
 				H Μάχη του Σαν Ρομάνο
 				<audio id="player" src="../sounds/romano.mp3"></audio>
 				<div class="w3-right">
@@ -47,33 +68,30 @@
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
 				</div>
 			</h1>
+			<h1 id="en" class="w3-wide">Battle of San Romano</h1>
 			<hr>
-
-			<p class="w3-justify">Ο πίνακας που απεικονίζει την <b>Μάχη του Σαν Ρομάνο</b> παρουσιάστηκε από τον καλλιτέχνη του quattrocento, Paolo Uccello, είναι ένας από τους τρεις που έγραψε σχετικά με αυτό το θέμα, εστιάζοντας στην προέλευση του τύπου μάχης στην ευρωπαϊκή τέχνη που ανατέθηκαν από τον Leonardo Bartolini Salimbeni, ο οποίος συμμετείχε στη μάχη, απεικονίζουν στιγμές της μάχης των Φλωρεντινών με τους Σιένες, το 1432. Στον πίνακα, ένας ιππότης της Φλωρεντίας χτυπά τον αρχηγό του εχθρού Bernardino della Charda με ένα δόρυ <a href="https://gr.painting-planet.com/%CE%BC%CE%AC%CF%87%CE%B7-%CF%84%CE%BF%CF%85-%CF%83%CE%B1%CE%BD-%CF%81%CE%BF%CE%BC%CE%AC%CE%BD%CE%BF-paolo-uccello/" target="_blank">[6]</a>.</p>
+			<p id="el" class="w3-justify">Ο πίνακας που απεικονίζει την <b>Μάχη του Σαν Ρομάνο</b> παρουσιάστηκε από τον καλλιτέχνη του quattrocento, Paolo Uccello, είναι ένας από τους τρεις που έγραψε σχετικά με αυτό το θέμα, εστιάζοντας στην προέλευση του τύπου μάχης στην ευρωπαϊκή τέχνη που ανατέθηκαν από τον Leonardo Bartolini Salimbeni, ο οποίος συμμετείχε στη μάχη, απεικονίζουν στιγμές της μάχης των Φλωρεντινών με τους Σιένες, το 1432. Στον πίνακα, ένας ιππότης της Φλωρεντίας χτυπά τον αρχηγό του εχθρού Bernardino della Charda με ένα δόρυ <a href="https://gr.painting-planet.com/%CE%BC%CE%AC%CF%87%CE%B7-%CF%84%CE%BF%CF%85-%CF%83%CE%B1%CE%BD-%CF%81%CE%BF%CE%BC%CE%AC%CE%BD%CE%BF-paolo-uccello/" target="_blank">[6]</a>.</p>
+			<p id="en" class="w3-justify">The painting depicting the <b> Battle of San Romano </b> presented by quattrocento artist Paolo Uccello is one of three he wrote on the subject, focusing on the origins of the battle type in the assigned European art. by Leonardo Bartolini Salimbeni, who took part in the battle, depict moments of the Florentine battle with the Siena in 1432. In the painting, a Florentine knight strikes the enemy leader Bernardino della Charda with a spear <a href="https://gr.painting-planet.com/%CE%BC%CE%AC%CF%87%CE%B7-%CF%84%CE%BF%CF%85-%CF%83%CE%B1%CE%BD-%CF%81%CE%BF%CE%BC%CE%AC%CE%BD%CE%BF-paolo-uccello/" target="_blank">[6]</a>.</p>
 			<hr>
-			
-			<img width="900" height="510" src="../images/romano.jpg">
-
-            <p class="w3-justify">O ηγέτης των Φλωρεντινών Niccolo da Tolentino κάθεται σε ένα άσπρο άλογο, έχει ήδη γκρεμίσει έναν από τους εχθρούς στο έδαφος. Υπάρχει μια μάχη γύρω, “τα άλογα και οι άνθρωποι έχουν μπερδευτεί σε ένα σωρό”, πετούν λόγχες και τόξα, οι ιππότες πετούν τα όπλα τους στο έδαφος. Πολλοί χαρακτήρες τοποθετούνται σε μικρό χώρο και η σύνθεση περικόπτεται σκόπιμα στην άκρη του πλαισίου, γεγονός που καθιστά ολόκληρη τη σκηνή πιο κοντά, γεγονός που τονίζει επίσης ολόκληρη τη σκηνή.</p>
+			<div class="w3-tooltip">
+				<img width="900" height="510" src="../images/romano.jpg">
+				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Elias Rovielo: <a href="https://www.flickr.com/photos/eliasroviello/32366501074" target="_blank">https://www.flickr.com/photos/eliasroviello/32366501074</a></p>
+			</div>
+			<hr>
+            <p id="el" class="w3-justify">O ηγέτης των Φλωρεντινών Niccolo da Tolentino κάθεται σε ένα άσπρο άλογο, έχει ήδη γκρεμίσει έναν από τους εχθρούς στο έδαφος. Υπάρχει μια μάχη γύρω, “τα άλογα και οι άνθρωποι έχουν μπερδευτεί σε ένα σωρό”, πετούν λόγχες και τόξα, οι ιππότες πετούν τα όπλα τους στο έδαφος. Πολλοί χαρακτήρες τοποθετούνται σε μικρό χώρο και η σύνθεση περικόπτεται σκόπιμα στην άκρη του πλαισίου, γεγονός που καθιστά ολόκληρη τη σκηνή πιο κοντά, γεγονός που τονίζει επίσης ολόκληρη τη σκηνή.</p>
+			<p id="en" class="w3-justify">Florentine leader Niccolo da Tolentino is sitting on a white horse, he has already knocked down one of the enemies on the ground. There is a battle around, "horses and people are confused in a pile", spears and bows are thrown, knights throw their weapons on the ground. Many characters are placed in a small space and the composition is intentionally trimmed at the edge of the frame, which makes the whole scene closer, which also emphasizes the whole scene.</p>
+			<hr>
         </section>
-		​
 		<!-- Information -->
 		<section class="w3-row-padding w3-center w3-light-grey">
-			<div class="w3-third">
-				<p>Χάρτης</p>
-				<iframe width="350" height="250" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.496405115677!2d2.337644!3d48.8606111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb975fcfa192f84d4!2zzpzOv8-Fz4POtc6vzr8gz4TOv8-FIM6bzr_Pjc6yz4HOv8-F!5e0!3m2!1sel!2sgr!4v1620222301590!5m2!1sel!2sgr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-			
-			<div class="w3-third">
-				<p>YouΤube Video</p>
+				<div class="w3-third"><p id="el">Uccello, η Μάχη του Σαν Ρομάνο</p><p id="en">Uccello, The Battle of San Romano</p>
                 <iframe width="350" height="250" src="https://www.youtube.com/embed/p8Vasl3L5p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="w3-third">
-				<p>360&deg εικόνα</p>
-				<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
-			</div>
+		<!-- 360 Momento -->
+		<div class="w3-third"><p id="el">Μουσείο Λούβρου</p><p id="en">Louvre Museum</p>
+			<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
+		</div>
 		</section>
-		​
 		<!-- Footer -->
 		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
 			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
@@ -81,16 +99,32 @@
 			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
 			<a href="https://www.flickr.com/photos/29248605@N07/albums/72157665172547927/" target="_blank"><i class="fa fa-flickr"></i></a>
 			<a href="https://www.linkedin.com/company/musee-du-louvre/" target="_blank"><i class="fa fa-linkedin"></i></a>
-			
 			<p class="w3-medium">
 			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> 
 			<br>
 			Edited by <a href = "mailto:ct20044@ct.aegean.gr">Efstratia Kazi</a>
-			
 			<address class="w3-medium">
 				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>		
 			</address>
 			</p>
-		</footer>	
+		</footer>
+		<script>	
+			// Language function
+			var greek = document.getElementById('el_click'),
+				english = document.getElementById('en_click'),
+				el_txt = document.querySelectorAll('#el'),
+				en_txt = document.querySelectorAll('#en'),
+				nb_el = el_txt.length,
+				nb_en = en_txt.length;
+			
+			greek.addEventListener('click', function() {
+				langue(greek,english);
+			}, false);
+
+			english.addEventListener('click', function() {
+			langue(english,greek);
+			}, false);
+			init();
+		</script>
 	</body>
 </html>

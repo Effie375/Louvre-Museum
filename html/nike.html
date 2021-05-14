@@ -1,43 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="el">
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Nίκη της Σαμοθράκης</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script src="../js/language.js"></script>
+		<script src="../js/search.js"></script>
 	</head>
 	<body>
 		<!-- Navigation -->
 		<nav class="w3-bar w3-black">
-			<a href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
+			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
+			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Exhibits -->
 			<div class="w3-dropdown-hover">
-			<button class="w3-button">Εκθέματα</button>
-				 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-					<a href="#home" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-					<a href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
+				<button id="el" class="w3-button">Εκθέματα</button>
+				<button id="en" class="w3-button">Exhibits</button>
+					<div class="w3-dropdown-content w3-bar-block w3-card-4">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
+					</div>		
+			</div>
+			<!-- Work of arts -->
+			<div class="w3-dropdown-hover">
+				<button id="el" class="w3-button">Έργα Τέχνης</button>
+				<button id="en" class="w3-button">Work of arts</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
+					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
+					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
+					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
+					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
+					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
 				</div>
 			</div>
-			<div class="w3-dropdown-hover">
-			<button class="w3-button">Έργα Τέχνης</button>
-			   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-				</div>
-			 </div>
-			<a href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<!-- Contact -->
+			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
+			<!-- Change language -->
 			<div class="w3-right">
-				<input type="text" class="w3-bar-item w3-input w3-black w3-mobile" placeholder="Search.."><a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
+				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
+			</div>
+			<!-- Search -->
+			<div class="w3-right">
+				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
+					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
+					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
+				</form>
 			</div>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
-			<h1 id="home" class="w3-wide">
+			<h1 id="el" class="w3-wide">
 				H Νίκη της Σαμοθράκης
 				<audio id="player" src="../sounds/nike.mp3"></audio>
 				<div class="w3-right">
@@ -45,35 +68,33 @@
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
 				</div>
 			</h1>
+			<h1 id="en" class="w3-wide">Victory of Samothrace</h1>
 			<hr>
-
-			<p class="w3-justify">Η <b>Νίκη της Σαμοθράκης</b> είναι ένα ελληνιστικό γλυπτό του 2ου π.Χ. αιώνα σκαλισμένο σε παριανό, σε μέγεθος μεγαλύτερο από το φυσικό μάρμαρο, που παριστάνει τη θεά Νίκη. Το γλυπτό βρέθηκε στη Σαμοθράκη το 1863, σπασμένο σε πολλά κομμάτια, και μεταφέρθηκε στο Μουσείο του Λούβρου. Θεωρείται ένα από τα αριστουργήματα της ελληνικής τέχνης. Η θεά Νίκη παρουσιάζεται ως φτερωτή γυναίκα που κατεβαίνει από τον ουρανό για να ανακοινώσει τη νίκη του στόλου που κέρδισε τη μάχη. Αντιπροσωπεύει τη στιγμή που προσγειώθηκε η θεά, λίγο πριν σταθεί στην πλώρη του πλοίου, ενάντια στον δυνατό άνεμο που κάνει τα ενδύματά της να κυματίζουν <a href="http://www.pi-schools.gr/lessons/aesthetics/eikastika/afises/index.php?id=14&v=1" target="_blank">[3]</a>.</p>
+			<p id="el" class="w3-justify">Η <b>Νίκη της Σαμοθράκης</b> είναι ένα ελληνιστικό γλυπτό του 2ου π.Χ. αιώνα σκαλισμένο σε παριανό, σε μέγεθος μεγαλύτερο από το φυσικό μάρμαρο, που παριστάνει τη θεά Νίκη. Το γλυπτό βρέθηκε στη Σαμοθράκη το 1863, σπασμένο σε πολλά κομμάτια, και μεταφέρθηκε στο Μουσείο του Λούβρου. Θεωρείται ένα από τα αριστουργήματα της ελληνικής τέχνης. Η θεά Νίκη παρουσιάζεται ως φτερωτή γυναίκα που κατεβαίνει από τον ουρανό για να ανακοινώσει τη νίκη του στόλου που κέρδισε τη μάχη. Αντιπροσωπεύει τη στιγμή που προσγειώθηκε η θεά, λίγο πριν σταθεί στην πλώρη του πλοίου, ενάντια στον δυνατό άνεμο που κάνει τα ενδύματά της να κυματίζουν <a href="http://www.pi-schools.gr/lessons/aesthetics/eikastika/afises/index.php?id=14&v=1" target="_blank">[3]</a>.</p>
+			<p id="en" class="w3-justify">The <b>Victory of Samothrace</b> is a Greek sculpture of the 2nd century BC. for carved in Parian, in photographs from time immemorial, representing the goddess Nike. The sculpture is available in Samothrace in 1863, broken into several pieces and transferred to the Louvre Museum. I consider the process to be one of the slides of Greek art. The goddess Victory dimension as a propeller required by myself to claim the victory of the end I display the battle. Representation of the screen that attracts the goddess, every time I go to the language of the ship, intermediate photos that I want her clothes to flutter <a href="http://www.pi-schools.gr/lessons/aesthetics/eikastika/afises/index.php?id=14&v=1" target="_blank">[3]</a>.</p>
 			<hr>
-			
-			<img width="900" height="800" src="../images/nike.jpg">
-			
-			<p class="w3-justify">Στο δεξί της χέρι φαίνεται ότι κρατούσε μία σάλπιγγα, την οποία θα την έφερνε κοντά στα χείλη, ενώ στο αριστερό κρατούσε μάλλον κάποιο λάφυρο ή τρόπαιο από τη μάχη. Το πτυχωτό ένδυμα κολλά πάνω στο σώμα της σαν να είναι βρεγμένο. Το ένδυμα, που γλιστρά από τους ώμους της, κυματίζει πίσω της και τυλίγεται γύρω από τα πόδια της.</p>
-		
-            <p class="w3-justify">Τα δυνατά φτερά της θεάς φαίνονται έτοιμα να την πάρουν ξανά. Αν και έχουν περάσει πολλοί αιώνες, εξακολουθούν να διατηρούν μια αξιοθαύμαστη ακρίβεια της αναπαράστασης.</p>
+			<div class="w3-tooltip">
+				<img width="900" height="800"  src="../images/nike.jpg">
+				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Christodoulakis A.</p>
+			</div>
+			<hr>
+			<p id="el" class="w3-justify">Στο δεξί της χέρι φαίνεται ότι κρατούσε μία σάλπιγγα, την οποία θα την έφερνε κοντά στα χείλη, ενώ στο αριστερό κρατούσε μάλλον κάποιο λάφυρο ή τρόπαιο από τη μάχη. Το πτυχωτό ένδυμα κολλά πάνω στο σώμα της σαν να είναι βρεγμένο. Το ένδυμα, που γλιστρά από τους ώμους της, κυματίζει πίσω της και τυλίγεται γύρω από τα πόδια της.</p>
+			<p id="en" class="w3-justify">In her right hand she seems to be holding a trumpet, which she would bring close to her lips, while in her left she was holding rather some loot or a trophy from the battle. The pleated garment sticks to her body as if it were wet. The garment, which slips from her shoulders, ripples behind her and wraps around her legs.</p>
+            <p id="el" class="w3-justify">Τα δυνατά φτερά της θεάς φαίνονται έτοιμα να την πάρουν ξανά. Αν και έχουν περάσει πολλοί αιώνες, εξακολουθούν να διατηρούν μια αξιοθαύμαστη ακρίβεια της αναπαράστασης.</p>
+			<p id="en" class="w3-justify">The strong wings of the goddess seem ready to take her again. Although many centuries have passed, they still maintain an admirable accuracy of representation.</p>
+			<hr>
         </section>
-		​
 		<!-- Information -->
 		<section class="w3-row-padding w3-center w3-light-grey">
-			<div class="w3-third">
-				<p>Χάρτης</p>
-				<iframe width="350" height="250" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.496405115677!2d2.337644!3d48.8606111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb975fcfa192f84d4!2zzpzOv8-Fz4POtc6vzr8gz4TOv8-FIM6bzr_Pjc6yz4HOv8-F!5e0!3m2!1sel!2sgr!4v1620222301590!5m2!1sel!2sgr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-			
-			<div class="w3-third">
-				<p>YouΤube Video</p>
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/t5I5m5V7_zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<!-- Youtube video -->
+			<div class="w3-third"><p id="el">Νίκη της Σαμοθράκης</p><p id="en">Victory of Samothrace</p>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/_Py_5wjZ1wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="w3-third">
-				<p>360&deg εικόνα</p>
+			<!-- 360 Momento -->
+			<div class="w3-third"><p id="el">Μουσείο Λούβρου</p><p id="en">Louvre Museum</p>
 				<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
 			</div>
 		</section>
-		​
 		<!-- Footer -->
 		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
 			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
@@ -81,16 +102,32 @@
 			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
 			<a href="https://www.flickr.com/photos/29248605@N07/albums/72157665172547927/" target="_blank"><i class="fa fa-flickr"></i></a>
 			<a href="https://www.linkedin.com/company/musee-du-louvre/" target="_blank"><i class="fa fa-linkedin"></i></a>
-			
 			<p class="w3-medium">
 			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> 
 			<br>
 			Edited by <a href = "mailto:ct20044@ct.aegean.gr">Efstratia Kazi</a>
-			
 			<address class="w3-medium">
 				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>		
 			</address>
 			</p>
-		</footer>	
+		</footer>
+		<script>	
+			// Language function
+			var greek = document.getElementById('el_click'),
+				english = document.getElementById('en_click'),
+				el_txt = document.querySelectorAll('#el'),
+				en_txt = document.querySelectorAll('#en'),
+				nb_el = el_txt.length,
+				nb_en = en_txt.length;
+
+			greek.addEventListener('click', function() {
+				langue(greek,english);
+			}, false);
+
+			english.addEventListener('click', function() {
+			langue(english,greek);
+			}, false);
+			init();
+		</script>
 	</body>
 </html>
