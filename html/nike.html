@@ -6,13 +6,14 @@
 		<title>Nίκη της Σαμοθράκης</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="w3-bar w3-black">
+		<nav class="w3-bar w3-camo-black">
 			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
 			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
@@ -60,12 +61,13 @@
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
+			<hr>
 			<h1 id="el" class="w3-wide">
 				H Νίκη της Σαμοθράκης
 				<audio id="player" src="../sounds/nike.mp3"></audio>
 				<div class="w3-right">
-				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-50x'></i></a>
-				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
+				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
 			</h1>
 			<h1 id="en" class="w3-wide">Victory of Samothrace</h1>
@@ -86,17 +88,28 @@
         </section>
 		<!-- Information -->
 		<section class="w3-row-padding w3-center w3-light-grey">
+			<div class="w3-third">
+				<h3 id="el">Άρτεμις των Βερσαλλιών</h3>
+				<h3 id="en">Diana of Versailles</h3>
+				<a href="artemis.html">
+				  <img src="../images/artemis.jpg" alt="E-Boutique" width="350" height="300">
+				</a>
+			</div>
 			<!-- Youtube video -->
-			<div class="w3-third"><p id="el">Νίκη της Σαμοθράκης</p><p id="en">Victory of Samothrace</p>
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/_Py_5wjZ1wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="w3-third"><h3 id="el">Νίκη της Σαμοθράκης</h3><h3 id="en">Victory of Samothrace</h3>
+                <iframe width="380" height="300" src="https://www.youtube.com/embed/_Py_5wjZ1wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-			<!-- 360 Momento -->
-			<div class="w3-third"><p id="el">Μουσείο Λούβρου</p><p id="en">Louvre Museum</p>
-				<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
+			<div class="w3-third">
+				<h3 id="el">Αφροδίτη της Μήλου</h3>
+				<h3 id="en">Aphrodite of Milos</h3>
+				<a href="aphrodite.html">
+				  <img src="../images/aphrodite.jpg" alt="E-Boutique" width="350" height="300">
+				</a>
+				<hr>
 			</div>
 		</section>
 		<!-- Footer -->
-		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+		<footer class="w3-container w3-padding-64 w3-center w3-camo-black w3-xlarge">
 			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
 			<a href="https://gr.pinterest.com/igori/musee-du-louvre-paris/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
 			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -119,13 +132,13 @@
 				en_txt = document.querySelectorAll('#en'),
 				nb_el = el_txt.length,
 				nb_en = en_txt.length;
-
 			greek.addEventListener('click', function() {
+				document.title="Nίκη της Σαμοθράκης";
 				langue(greek,english);
 			}, false);
-
 			english.addEventListener('click', function() {
-			langue(english,greek);
+				document.title="Victory of Samothrace";
+				langue(english,greek);
 			}, false);
 			init();
 		</script>

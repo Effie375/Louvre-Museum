@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/slider.css"/>
 		<script src="js/language.js"></script>
@@ -17,7 +18,7 @@
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="w3-bar w3-black">
+		<nav class="w3-bar w3-camo-black">
 			<!-- Home -->
 			<a id="el" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
 			<a id="en" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
@@ -65,13 +66,14 @@
 			</div>
 		</nav>
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
+			<hr>
 			<!-- Heading 1 -->
 			<h1 id="el" class="w3-wide">
 				To Μουσείο του Λούβρου
 				<audio id="player" src="sounds/museum.mp3"></audio>
 				<div id="sound" class="w3-right">
-					<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-50x'></i></a>
-					<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
+					<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+					<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
 			</h1>
 			<h1 id="en" class="w3-wide">Louvre Museum</h1>
@@ -81,13 +83,35 @@
 			<p id="en" class="w3-justify">The <b> Musee du Louvre </b> is one of the largest and oldest art museums in the world. It is located in the heart of the first district of Paris on the banks of the Seine. The Louvre became a museum after the French Revolution. Before that, it was the palace of the French king, and before that it was just a fortress. In particular, the building that houses the museum was built gradually over the centuries, which changed its form significantly. The museum has a collection of more than one million works of art, including about 35,000 works of art on display, which are distributed in the 3 wings of the former palace <a href="https://www.parisi-info.com/2014/11/blog-post.html?fbclid=IwAR0EpMyKFrIfiPCfNw5ElD6GAemQIuR9_vCngbHdGWP0Lj53i7kmlF6wcO0" target="_blank">[1]</a>.</p>
 			<hr>
 			<!-- Slider -->
-			<div id="slider">  
-				<div class="slides"><img src="images/slider/museum_2.jpg" width="2000" height="500"/></div>
-				<div class="slides"><img src="images/slider/inside_1.jpg" width="2000" height="500"/></div>
-				<div class="slides"><img src="images/slider/garden.jpg" width="2000" height="500"/></div>
-				<div class="slides"><img src="images/slider/museum_1.jpg" width="2000" height="500"/></div>
-				<div class="slides"><img src="images/slider/inside_2.jpg" width="2000" height="500"/></div>
-				<div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+			<div class="slideshow-container">
+				<div class="slideshow-inner">	
+					<div class="mySlides fade">
+						<img src='images/slider/museum_2.jpg' width="2000" height="500"/>
+					</div>
+					<div class="mySlides fade">
+						<img src='images/slider/inside_1.jpg' width="2000" height="500"/>
+					</div>
+					<div class="mySlides fade">
+						<img src='images/slider/garden.jpg' width="2000" height="500"/>
+					</div>
+					<div class="mySlides fade">
+						<img src='images/slider/museum_1.jpg' width="2000" height="500"/>
+					</div>
+					<div class="mySlides fade">
+						<img src='images/slider/inside_2.jpg' width="2000" height="500"/>
+					</div>
+				</div>
+				<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+				<a class="next" onclick='plusSlides(1)'>&#10095;</a>
+			</div>
+			<br/>
+			<div style='text-align: center;'>
+			<span class="dot" onclick='currentSlide(1)'></span>
+			<span class="dot" onclick='currentSlide(2)'></span>
+			<span class="dot" onclick='currentSlide(3)'></span>
+			<span class="dot" onclick='currentSlide(4)'></span>
+			<span class="dot" onclick='currentSlide(5)'></span>
+			</div>
 			</div>
 			<hr>
 			<!-- Description 2 -->
@@ -103,17 +127,31 @@
 		</section>
 		<!-- Information -->
 		<section class="w3-row-padding w3-center w3-light-grey">
-			<!-- Youtube video -->
-			<div class="w3-third"><p id="el">Μία ανεπανάληπτη εμπειρία ζωής</p><p id="en">A unique life experience</p>
-				<iframe width="350" height="250" src="https://www.youtube.com/embed/D1UM6QufeVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="w3-third">
+				<h3 id="el">Οι κήποι στο Μουσείο του Λούβρου</h3>
+				<h3 id="en">Louvre Gardens</h3>
+				<a target="_blank" href="https://www.louvre.fr/en/explore/the-gardens">
+				  <img src="images/garden.jpg" alt="E-Boutique" width="50" height="300">
+				</a>
 			</div>
-			<!-- 360 Momento -->
-			<div class="w3-third"><p id="el">Μουσείο Λούβρου</p><p id="en">Louvre Museum</p>
-				<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
+			<div class="w3-third">
+				<h3 id="el">Οι θησαυροί στο Μουσείο του Λούβρου</h3>
+				<h3 id="en">The treasures of the Louvre palace</h3>
+				<a target="_blank" href="https://www.louvre.fr/en/explore">
+				  <img src="images/collections.jpg" alt="E-Boutique" width="50" height="300">
+				</a>
+			</div>
+			<div class="w3-third">
+				<h3 id="el">Το E-Boutique στο Μουσείο του Λούβρου</h3>
+				<h3 id="en">New on the musée du Louvre E-Boutique</h3>
+				<a target="_blank" href="https://boutique.louvre.fr/?lang=en">
+				  <img src="images/boutique.jpg" alt="E-Boutique" width="50" height="300">
+				</a>
+				<hr>
 			</div>
 		</section>
 		<!-- Footer -->
-		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+		<footer class="w3-container w3-padding-64 w3-center w3-camo-black w3-xlarge">
 			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
 			<a href="https://gr.pinterest.com/igori/musee-du-louvre-paris/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
 			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -130,11 +168,6 @@
 			</p>
 		</footer>
 		<script>
-			// Slider function
-			var index = 0;
-			var slides = document.querySelectorAll(".slides");
-			var dot = document.querySelectorAll(".dot");
-			changeSlide();
 			// Language function
 			var greek = document.getElementById('el_click'),
 				english = document.getElementById('en_click'),
@@ -143,12 +176,26 @@
 				nb_el = el_txt.length,
 				nb_en = en_txt.length;
 			greek.addEventListener('click', function() {
+				document.title="Μουσείο του Λούβρου";
 				langue(greek,english);
 			}, false);
 			english.addEventListener('click', function() {
-			langue(english,greek);
+				document.title="Louvre Museum";
+				langue(english,greek);
 			}, false);
 			init();
+		</script>
+		<script>
+		var slideIndex = 1;
+		var myTimer;
+		var slideshowContainer;
+		window.addEventListener("load",function() {
+			showSlides(slideIndex);
+			myTimer = setInterval(function(){plusSlides(1)}, 4000);
+			slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+			slideshowContainer.addEventListener('mouseenter', pause)
+			slideshowContainer.addEventListener('mouseleave', resume)
+		})
 		</script>
 	</body>
 </html>

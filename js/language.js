@@ -7,14 +7,12 @@ function langue(langueOn,langueOff){
     if(langueOn.innerHTML == 'Ελληνικά'){
         afficher(el_txt, nb_el);
         cacher(en_txt, nb_en);
-        document.title="Μουσείο του Λούβρου"
         document.getElementById("sound").style.visibility="visible";
     }
 
     else if(langueOn.innerHTML == 'English'){
         afficher(en_txt, nb_en);
         cacher(el_txt, nb_el);
-        document.title="Louvre Museum"
         document.getElementById("sound").style.visibility="hidden";
         document.getElementById('player').pause();
     }

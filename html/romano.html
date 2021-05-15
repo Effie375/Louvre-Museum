@@ -6,13 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="w3-bar w3-black">
+		<nav class="w3-bar w3-camo-black">
 			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
 			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
@@ -60,12 +61,13 @@
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
+			<hr>
 			<h1 id="el" class="w3-wide">
 				H Μάχη του Σαν Ρομάνο
 				<audio id="player" src="../sounds/romano.mp3"></audio>
 				<div class="w3-right">
-				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-50x'></i></a>
-				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-50x"></i></a>
+				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
 			</h1>
 			<h1 id="en" class="w3-wide">Battle of San Romano</h1>
@@ -75,7 +77,7 @@
 			<hr>
 			<div class="w3-tooltip">
 				<img width="900" height="510" src="../images/romano.jpg">
-				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Elias Rovielo: <a href="https://www.flickr.com/photos/eliasroviello/32366501074" target="_blank">https://www.flickr.com/photos/eliasroviello/32366501074</a></p>
+				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Elias Rovielo: <a href="https://www.flickr.com/photos/eliasroviello/32366501074" target="_blank">The Battle of San Romano by Paolo Uccello</a></p>
 			</div>
 			<hr>
             <p id="el" class="w3-justify">O ηγέτης των Φλωρεντινών Niccolo da Tolentino κάθεται σε ένα άσπρο άλογο, έχει ήδη γκρεμίσει έναν από τους εχθρούς στο έδαφος. Υπάρχει μια μάχη γύρω, “τα άλογα και οι άνθρωποι έχουν μπερδευτεί σε ένα σωρό”, πετούν λόγχες και τόξα, οι ιππότες πετούν τα όπλα τους στο έδαφος. Πολλοί χαρακτήρες τοποθετούνται σε μικρό χώρο και η σύνθεση περικόπτεται σκόπιμα στην άκρη του πλαισίου, γεγονός που καθιστά ολόκληρη τη σκηνή πιο κοντά, γεγονός που τονίζει επίσης ολόκληρη τη σκηνή.</p>
@@ -84,16 +86,28 @@
         </section>
 		<!-- Information -->
 		<section class="w3-row-padding w3-center w3-light-grey">
-				<div class="w3-third"><p id="el">Uccello, η Μάχη του Σαν Ρομάνο</p><p id="en">Uccello, The Battle of San Romano</p>
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/p8Vasl3L5p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="w3-third">
+				<h3 id="el">Άρης και Αφροδίτη</h3>
+				<h3 id="en">Ares and Aphrodite</h3>
+				<a href="ares_and_aphrodite.html">
+				  <img src="../images/ares_and_aphrodite.jpg" alt="E-Boutique" width="380" height="300">
+				</a>
+			</div>
+			<!-- Youtube video -->
+			<div class="w3-third"><h3 id="el">Uccello, η Μάχη του Σαν Ρομάνο</h3><h3 id="en">Uccello, The Battle of San Romano</h3>
+                <iframe width="380" height="300" src="https://www.youtube.com/embed/p8Vasl3L5p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-		<!-- 360 Momento -->
-		<div class="w3-third"><p id="el">Μουσείο Λούβρου</p><p id="en">Louvre Museum</p>
-			<iframe width="350" height="250" src="https://momento360.com/e/u/d28e9471eef0458097faf40c6b5c986c?utm_campaign=embed&utm_source=other&heading=362.91&pitch=-36.72&field-of-view=75&size=medium"></iframe>
-		</div>
+			<div class="w3-third">
+				<h3 id="el">Μόνα Λίζα</h3>
+				<h3 id="en">Mona Lisa</h3>
+				<a href="mona_lisa.html">
+				  <img src="../images/mona.jpg" alt="E-Boutique" width="350" height="300">
+				</a>
+				<hr>
+			</div>
 		</section>
 		<!-- Footer -->
-		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+		<footer class="w3-container w3-padding-64 w3-center w3-camo-black w3-xlarge">
 			<a href="https://el-gr.facebook.com/museedulouvre/" target="_blank"><i class="fa fa-facebook-official"></i></a>
 			<a href="https://gr.pinterest.com/igori/musee-du-louvre-paris/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
 			<a href="https://twitter.com/museelouvre?lang=el" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -116,13 +130,13 @@
 				en_txt = document.querySelectorAll('#en'),
 				nb_el = el_txt.length,
 				nb_en = en_txt.length;
-			
 			greek.addEventListener('click', function() {
+				document.title="Μάχη του Σαν Ρομάνο";
 				langue(greek,english);
 			}, false);
-
 			english.addEventListener('click', function() {
-			langue(english,greek);
+				document.title="Battle of San Romano";
+				langue(english,greek);
 			}, false);
 			init();
 		</script>
