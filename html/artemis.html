@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<title>Άρτεμις των Βερσαλλιών</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -11,53 +12,49 @@
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
-			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Home -->
+			<a href="../index.html" id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a href="../index.html" id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
+					</div>
+                </div>	
 			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
-				</div>
-			</div>
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" href="romano.html" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" href="romano.html" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" href="ares_and_aphrodite.html"  class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" href="ares_and_aphrodite.html"class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
@@ -65,7 +62,7 @@
 			<h1 id="el" class="w3-wide">
 				Η Άρτεμις των Βερσαλλιών
 				<audio id="player" src="../sounds/artemis.mp3"></audio>
-				<div class="w3-right">
+				<div id="sound" class="w3-right">
 				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
@@ -75,10 +72,8 @@
 			<p id="el" class="w3-justify">H <b>Άρτεμις των Βερσαλλιών</b> ή αλλιώς η θεά του κυνηγιού φοράει κοντό  χιτώνα, με ένα μανδύα δεμένο στη μέση και ένα στέμμα. Η θεά φαίνεται  να κινείται με δύναμη προς τα μπροστά μαζί με ένα ελάφι.  Κρατά το τόξο με το δεξί χέρι, ενώ με το αριστερό φαίνεται ότι ετοιμάζεται να πάρει ένα βέλος από τη φαρέτρα που ειχε κρεμασμένη στην πλάτη. Αυτό το διάσημο άγαλμα ήταν ένα δώρο από τον Πάπα Παύλο IV στον Άντρο Β’ (1556) και διακοσμούσε πολλές γαλλικές βασιλικές κατοικίες. Τον 16ο αιώνα, εμφανίστηκε στο Jardin de la Reine στο παλάτι του Fontainebleau. Το 1602, ο Henry IV το μετέφερε στο Λούβρο, όπου εμφανίστηκε στην αίθουσα Αρχαιοτήτων (σήμερα το Salle des Caryatides) <a href="https://korinthia.net.gr/2020/02/21/%CE%B7-%CE%AC%CF%81%CF%84%CE%B5%CE%BC%CE%B7%CF%82-%CF%84%CF%89%CE%BD-%CE%B2%CE%B5%CF%81%CF%83%CE%B1%CE%BB%CE%BB%CE%B9%CF%8E%CE%BD/8869/" target="_blank">[4]</a>.</p>
 			<p id="en" class="w3-justify"><b>Diana of Versailles </b> or the goddess of hunting wears a short tunic, with a cloak tied at the waist and a crown. The goddess seems to be moving forward with force along with a deer. He holds the bow with his right hand, while with his left he seems to be getting ready to take an arrow from the quiver he had hung on his back. This famous statue was a gift from Pope Paul IV to Andros II (1556) and decorated many French royal residences. In the 16th century, it appeared in the Jardin de la Reine in the palace of Fontainebleau. In 1602, Henry IV moved it to the Louvre, where it appeared in the Hall of Antiquities (now the Salle des Caryatides) <a href="https://korinthia.net.gr/2020/02/21/%CE%B7-%CE%AC%CF%81%CF%84%CE%B5%CE%BC%CE%B7%CF%82-%CF%84%CF%89%CE%BD-%CE%B2%CE%B5%CF%81%CF%83%CE%B1%CE%BB%CE%BB%CE%B9%CF%8E%CE%BD/8869/" target="_blank">[4]</a>.</p>
 			<hr>
-			<div class="w3-tooltip">
-				<img width="900" height="800"  src="../images/artemis.jpg">
-				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Christodoulakis A.</p>
-			</div>
+			<img class="responsive-iframe" width="100%" height="100%"  src="../images/artemis.jpg">
+			<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Christodoulakis A.</p>
 			<p id="el" class="w3-justify">To πρότυπο γλυπτό της μεγαλοπρεπούς θεάς συσχετίζεται με τον Απόλλωνα του Belvedere που είχε φιλοξενηθεί παλαιότερα στο Λούβρο. Οι δύο θεότητες αποτελούσαν σύνολο αγαλμάτων, το οποίο απεικόνιζε την τιμωρία των Νιοβίδων. Η Άρτεμις ήταν μια γυναίκα δραστήρια, ορμητική και ευκίνητη. Η ελεύθερη και αεικίνητη θεά διοχέτευε το μεγαλύτερο μέρος της ενεργητικότητάς της στην αναζήτηση και καταδίωξη θηραμάτων στα βουνά <a href="http://impschool.gr/erga-emeres17-18/images/etos17-18/gymnasio/omiros-sto-pelagos-a-gym/Eleanna-Xenidi2.pdf" target="_blank">[9]</a>.</p>
 			<p id="en" class="w3-justify">The model sculpture of the majestic goddess is associated with Apollo of Belvedere who had previously been hosted at the Louvre. The two deities were a set of statues, which depicted the punishment of the Niovids. Artemis was an active, impetuous and agile woman. The free and immovable goddess channeled most of her energy into the search and pursuit of prey in the mountains <a href="http://impschool.gr/erga-emeres17-18/images/etos17-18/gymnasio/omiros-sto-pelagos-a-gym/Eleanna-Xenidi2.pdf" target="_blank">[9]</a>.</p>
 			<hr>
@@ -89,7 +84,7 @@
 				<h3 id="el">Αφροδίτη της Μήλου</h3>
 				<h3 id="en">Aphrodite of Milos</h3>
 				<a href="aphrodite.html">
-				  <img src="../images/aphrodite.jpg" alt="E-Boutique" width="350" height="300">
+				  <img src="../images/aphrodite.jpg" alt="Aphrodite of Milos" width="350" height="300">
 				</a>
 			</div>
 			<!-- Youtube video -->
@@ -100,7 +95,7 @@
 				<h3 id="el">Νίκη της Σαμοθράκης</h3>
 				<h3 id="en">Victory of Samothrace</h3>
 				<a href="nike.html">
-				  <img src="../images/nike.jpg" alt="E-Boutique" width="350" height="300">
+				  <img src="../images/nike.jpg" alt="Victory of Samothrace" width="350" height="300">
 				</a>
 				<hr>
 			</div>

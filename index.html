@@ -4,6 +4,7 @@
 		<title>Μουσείο του Λούβρου</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<link rel="icon" href="images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
@@ -16,54 +17,49 @@
 			alert("Ο συγκεκριμένος ιστότοπος πραγματοποιήθηκε στα πλαίσια εξέτασης του μαθήματος Τεχνολογίες Διαδικτύου του Tμήματος Πολιτισμικής Τεχνολογίας & Επικοινωνίας. Το περιεχόμενο της ιστοσελίδας έχει άδεια περιεχομένου CC0 (Creative Commons zero) και δεν αποτελεί προϊόν εμπορικής χρήσης.");
 		</script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
 			<!-- Home -->
-			<a id="el" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id="en" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<a id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="html/aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="html/aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="html/nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="html/nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="html/artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="html/artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
-			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="html/mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-						<a id="en" href="html/mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-						<a id="el" href="html/romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-						<a id="en" href="html/romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-						<a id="el" href="html/ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-						<a id="en" href="html/ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="html/aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="html/aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" href="html/nike.html" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="html/nike.html" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" href="html/artemis.html" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="html/artemis.html" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
 					</div>
-			</div>
+                </div>	
+			<!-- Work of arts -->
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="html/mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" href="html/mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" href="html/romano.html" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" href="html/romano.html" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" href="html/ares_and_aphrodite.html" class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" href="html/ares_and_aphrodite.html" class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="html/contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="html/contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="html/contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="html/contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
 			<hr>
@@ -87,22 +83,35 @@
 				<div class="slideshow-inner">	
 					<div class="mySlides fade">
 						<img src='images/slider/museum_2.jpg' width="2000" height="500"/>
+						<div class="w3-grey text">
+							<i class="fa fa-camera"></i> Pedro Szekely:<a href="https://www.flickr.com/photos/pedrosz/42223539031" target="_blank">The Louvre In The Rain</a>
+						</div>
 					</div>
 					<div class="mySlides fade">
 						<img src='images/slider/inside_1.jpg' width="2000" height="500"/>
+						<div class="w3-grey text">
+							<i class="fa fa-camera"></i> Jorge Royan:<a href="https://commons.wikimedia.org/wiki/File:Paris_-_The_Musee_Du_Louvre_main_hall_by_night_-_2884.jpg" target="_blank">The Musee Du Louvre main hall by night</a>
+						</div>
 					</div>
 					<div class="mySlides fade">
 						<img src='images/slider/garden.jpg' width="2000" height="500"/>
+						<div class="w3-grey text">
+							<i class="fa fa-camera"></i> Jean-Pierre Dalbera:<a href="https://www.flickr.com/photos/dalbera/4952565816" target="_blank">Le jardin des Tuileries</a>
+						</div>
 					</div>
 					<div class="mySlides fade">
 						<img src='images/slider/museum_1.jpg' width="2000" height="500"/>
+						<div class="w3-grey text">
+							<i class="fa fa-camera"></i> Zehawk:<a href="https://www.flickr.com/photos/lastgunslinger/8185961122" target="_blank">At the Musée du Louvre at night</a>
+						</div>
 					</div>
 					<div class="mySlides fade">
 						<img src='images/slider/inside_2.jpg' width="2000" height="500"/>
+						<div class="w3-grey text">
+							<i class="fa fa-camera"></i> Su-lin:<a href="https://www.flickr.com/photos/su-lin/2464451623/" target="_blank">Inside the Louvre</a>
+						</div>
 					</div>
 				</div>
-				<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-				<a class="next" onclick='plusSlides(1)'>&#10095;</a>
 			</div>
 			<br/>
 			<div style='text-align: center;'>
@@ -131,15 +140,17 @@
 				<h3 id="el">Οι κήποι στο Μουσείο του Λούβρου</h3>
 				<h3 id="en">Louvre Gardens</h3>
 				<a target="_blank" href="https://www.louvre.fr/en/explore/the-gardens">
-				  <img src="images/garden.jpg" alt="E-Boutique" width="50" height="300">
+				  <img src="images/garden.jpg" alt="Louvre Gardens" width="50" height="300">
 				</a>
+				<p><i class="fa fa-camera"></i> Moyan Brenn: <a href="https://commons.wikimedia.org/wiki/File:Paris,_view_of_Louvre_museum_from_the_amusement_garden.jpg" target="_blank"> Louvre museum from the amusement garden</a></p>
 			</div>
 			<div class="w3-third">
 				<h3 id="el">Οι θησαυροί στο Μουσείο του Λούβρου</h3>
 				<h3 id="en">The treasures of the Louvre palace</h3>
 				<a target="_blank" href="https://www.louvre.fr/en/explore">
-				  <img src="images/collections.jpg" alt="E-Boutique" width="50" height="300">
+				  <img src="images/collections.jpg" alt="The treasures of the Louvre palace" width="50" height="300">
 				</a>
+				<p><i class="fa fa-camera"></i> Spiros K: <a href="https://www.flickr.com/photos/spirosk/7648942142/" target="_blank">Louvre Museum, Greco-Roman collection</a></p>
 			</div>
 			<div class="w3-third">
 				<h3 id="el">Το E-Boutique στο Μουσείο του Λούβρου</h3>
@@ -147,7 +158,7 @@
 				<a target="_blank" href="https://boutique.louvre.fr/?lang=en">
 				  <img src="images/boutique.jpg" alt="E-Boutique" width="50" height="300">
 				</a>
-				<hr>
+				<p><i class="fa fa-camera"></i> Neoclassicism Enthusiast: <a href="https://commons.wikimedia.org/wiki/File:Shop_in_the_Carrousel_du_Louvre_3.jpg" target="_blank">Shop in the Carrousel du Louvre</a></p>
 			</div>
 		</section>
 		<!-- Footer -->

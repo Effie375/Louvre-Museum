@@ -4,6 +4,7 @@
 		<title>Μόνα Λίζα</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
@@ -11,53 +12,49 @@
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
-			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Home -->
+			<a href="../index.html" id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a href="../index.html" id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
+					</div>
+                </div>	
 			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
-				</div>
-			</div>
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" href="romano.html" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" href="romano.html" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" href="ares_and_aphrodite.html"  class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" href="ares_and_aphrodite.html"class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
@@ -65,7 +62,7 @@
 			<h1 id="el" class="w3-wide">
 				Μόνα Λίζα
 				<audio id="player" src="../sounds/mona_lisa.mp3"></audio>
-				<div class="w3-right">
+				<div id="sound" class="w3-right">
 				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
@@ -75,10 +72,8 @@
 			<p id="el" class="w3-justify">Η <b>Μόνα Λίζα</b> (επίσης γνωστή ως Gioconda-Gioconda ή Πορτραίτο της Lisa Gerardini, σύζυγος του Francesco del Giocondo) είναι ένα πορτρέτο ζωγραφισμένο από τον Ιταλό καλλιτέχνη Leonardo da Vinci. Πρόκειται για μια ελαιογραφία σε ξύλο λεύκας, που ολοκληρώθηκε μέσα στη χρονική περίοδο 1503-1519. Ο πίνακας έχει μήκος 77 cm x 53 cm και απεικονίζει μια γυναίκα που κάθεται, τη Lisa del Giocondo, της οποίας η έκφραση του προσώπου περιγράφεται συχνά ως μυστηριώδης μορφή. Η Μόνα Λίζα θεωρείται το πιο διάσημο έργο ζωγραφικής <a href="https://el.wikipedia.org/wiki/%CE%9C%CF%8C%CE%BD%CE%B1_%CE%9B%CE%AF%CE%B6%CE%B1" target="_blank">[5]</a>.</p>
 			<p id="en" class="w3-justify"><b>The Mona Lisa</b> is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world". The painting's novel qualities include the subject's enigmatic expression,the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.The painting is probably of the Italian noblewoman Lisa Gherardini,the wife of Francesco del Giocondo, and is in oil on a white Lombardy poplar panel. It had been believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. It was acquired by King Francis I of France and is now the property of the French Republic itself, on permanent display at the Louvre, Paris since 1797.The Mona Lisa is one of the most valuable paintings in the world<a href="https://en.wikipedia.org/wiki/Mona_Lisa" target="_blank">[5]</a>.</p>
 			<hr>
-			<div class="w3-tooltip">
-				<img width="800" height="750"  src="../images/mona.jpg">
+			<img class="responsive-iframe" width="100%" height="100%"  src="../images/mona.jpg">
 				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Juanedc: <a href="https://commons.wikimedia.org/wiki/File:Mona_Lisa_in_Louvre,_Paris_October_2011.jpg" target="_blank">Mona Lisa in Louvre</a></p>
-			</div>
 			<hr>
 			<p id="el" class="w3-justify">Η Μόνα Λίζα παρέμεινε για ένα μήνα στην Ιταλία, προτού επιστρέψει στη Γαλλία. Εκτέθηκε στο «Ουφίτσι» και στα μεγαλύτερα μουσεία της Ιταλίας και εκατομμύρια Ιταλών θαύμασαν το αινιγματικό της χαμόγελο. Στις 31 Δεκεμβρίου 1913, 60.000 άνθρωποι την κατευόδωσαν στον σιδηροδρομικό σταθμό του Μιλάνου. Ταξίδεψε σε ειδικά φυλασσόμενο βαγόνι της ταχείας Μιλάνου - Παρισίων και από τις 4 Ιανουαρίου 1914 εγκαταστάθηκε και πάλι στο Λούβρο, όπου εκτίθεται έως σήμερα, κάτω από πρωτοφανή μέτρα ασφαλείας <a href="https://www.sansimera.gr/articles/305" target="_blank">[8]</a>.</p>
 			<p id="en" class="w3-justify"> The Mona Lisa stayed in Italy for a month before returning to France. It was exhibited in "Uffizi" and in the largest museums of Italy and millions of Italians admired her enigmatic smile. On December 31, 1913, 60,000 people boarded her at Milan Railway Station. He traveled in a specially guarded wagon of the fast Milan - Paris and from January 4, 1914 he settled again in the Louvre, where he is exhibited until today, under unprecedented security measures <a href="https://www.sansimera.gr/articles/305" target="_blank"> [8]</a>.</p>
@@ -90,7 +85,7 @@
 				<h3 id="el">Η Μάχη του Σαν Ρομάνο</h3>
 				<h3 id="en">Battle of San Romano</h3>
 				<a href="romano.html">
-				  <img src="../images/romano.jpg" alt="E-Boutique" width="380" height="300">
+				  <img src="../images/romano.jpg" alt="Battle of San Romano" width="380" height="300">
 				</a>
 			</div>
 			<!-- Youtube video -->
@@ -101,7 +96,7 @@
 				<h3 id="el">Άρης και Αφροδίτη</h3>
 				<h3 id="en">Ares and Aphrodite</h3>
 				<a href="ares_and_aphrodite.html">
-				  <img src="../images/ares_and_aphrodite.jpg" alt="E-Boutique" width="380" height="300">
+				  <img src="../images/ares_and_aphrodite.jpg" alt="Ares and Aphrodite" width="380" height="300">
 				</a>
 				<hr>
 			</div>

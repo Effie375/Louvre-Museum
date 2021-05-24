@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<title>Nίκη της Σαμοθράκης</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -11,53 +12,49 @@
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
-			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Home -->
+			<a href="../index.html" id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a href="../index.html" id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
+					</div>
+                </div>	
 			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
-				</div>
-			</div>
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="mona_lisa.html"  class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" href="mona_lisa.html"  class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" href="romano.html" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" href="romano.html" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" href="ares_and_aphrodite.html"  class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" href="ares_and_aphrodite.html"class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
@@ -65,7 +62,7 @@
 			<h1 id="el" class="w3-wide">
 				H Νίκη της Σαμοθράκης
 				<audio id="player" src="../sounds/nike.mp3"></audio>
-				<div class="w3-right">
+				<div id="sound" class="w3-right">
 				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
@@ -75,10 +72,8 @@
 			<p id="el" class="w3-justify">Η <b>Νίκη της Σαμοθράκης</b> είναι ένα ελληνιστικό γλυπτό του 2ου π.Χ. αιώνα σκαλισμένο σε παριανό, σε μέγεθος μεγαλύτερο από το φυσικό μάρμαρο, που παριστάνει τη θεά Νίκη. Το γλυπτό βρέθηκε στη Σαμοθράκη το 1863, σπασμένο σε πολλά κομμάτια, και μεταφέρθηκε στο Μουσείο του Λούβρου. Θεωρείται ένα από τα αριστουργήματα της ελληνικής τέχνης. Η θεά Νίκη παρουσιάζεται ως φτερωτή γυναίκα που κατεβαίνει από τον ουρανό για να ανακοινώσει τη νίκη του στόλου που κέρδισε τη μάχη. Αντιπροσωπεύει τη στιγμή που προσγειώθηκε η θεά, λίγο πριν σταθεί στην πλώρη του πλοίου, ενάντια στον δυνατό άνεμο που κάνει τα ενδύματά της να κυματίζουν <a href="http://www.pi-schools.gr/lessons/aesthetics/eikastika/afises/index.php?id=14&v=1" target="_blank">[3]</a>.</p>
 			<p id="en" class="w3-justify">The <b>Victory of Samothrace</b> is a Greek sculpture of the 2nd century BC. for carved in Parian, in photographs from time immemorial, representing the goddess Nike. The sculpture is available in Samothrace in 1863, broken into several pieces and transferred to the Louvre Museum. I consider the process to be one of the slides of Greek art. The goddess Victory dimension as a propeller required by myself to claim the victory of the end I display the battle. Representation of the screen that attracts the goddess, every time I go to the language of the ship, intermediate photos that I want her clothes to flutter <a href="http://www.pi-schools.gr/lessons/aesthetics/eikastika/afises/index.php?id=14&v=1" target="_blank">[3]</a>.</p>
 			<hr>
-			<div class="w3-tooltip">
-				<img width="900" height="800"  src="../images/nike.jpg">
-				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Christodoulakis A.</p>
-			</div>
+			<img class="responsive-iframe" width="100%" height="100%"  src="../images/nike.jpg">
+			<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Christodoulakis A.</p>
 			<hr>
 			<p id="el" class="w3-justify">Στο δεξί της χέρι φαίνεται ότι κρατούσε μία σάλπιγγα, την οποία θα την έφερνε κοντά στα χείλη, ενώ στο αριστερό κρατούσε μάλλον κάποιο λάφυρο ή τρόπαιο από τη μάχη. Το πτυχωτό ένδυμα κολλά πάνω στο σώμα της σαν να είναι βρεγμένο. Το ένδυμα, που γλιστρά από τους ώμους της, κυματίζει πίσω της και τυλίγεται γύρω από τα πόδια της.</p>
 			<p id="en" class="w3-justify">In her right hand she seems to be holding a trumpet, which she would bring close to her lips, while in her left she was holding rather some loot or a trophy from the battle. The pleated garment sticks to her body as if it were wet. The garment, which slips from her shoulders, ripples behind her and wraps around her legs.</p>
@@ -92,7 +87,7 @@
 				<h3 id="el">Άρτεμις των Βερσαλλιών</h3>
 				<h3 id="en">Diana of Versailles</h3>
 				<a href="artemis.html">
-				  <img src="../images/artemis.jpg" alt="E-Boutique" width="350" height="300">
+				  <img src="../images/artemis.jpg" alt="Diana of Versailles" width="350" height="300">
 				</a>
 			</div>
 			<!-- Youtube video -->
@@ -103,7 +98,7 @@
 				<h3 id="el">Αφροδίτη της Μήλου</h3>
 				<h3 id="en">Aphrodite of Milos</h3>
 				<a href="aphrodite.html">
-				  <img src="../images/aphrodite.jpg" alt="E-Boutique" width="350" height="300">
+				  <img src="../images/aphrodite.jpg" alt="Aphrodite of Milos" width="350" height="300">
 				</a>
 				<hr>
 			</div>

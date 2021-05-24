@@ -4,6 +4,7 @@
 		<title>Μάχη του Σαν Ρομάνο</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
@@ -11,53 +12,49 @@
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
-			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Home -->
+			<a href="../index.html" id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a href="../index.html" id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
+					</div>
+                </div>	
 			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
-				</div>
-			</div>
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
@@ -65,7 +62,7 @@
 			<h1 id="el" class="w3-wide">
 				H Μάχη του Σαν Ρομάνο
 				<audio id="player" src="../sounds/romano.mp3"></audio>
-				<div class="w3-right">
+				<div id="sound" class="w3-right">
 				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
@@ -75,10 +72,8 @@
 			<p id="el" class="w3-justify">Ο πίνακας που απεικονίζει την <b>Μάχη του Σαν Ρομάνο</b> παρουσιάστηκε από τον καλλιτέχνη του quattrocento, Paolo Uccello, είναι ένας από τους τρεις που έγραψε σχετικά με αυτό το θέμα, εστιάζοντας στην προέλευση του τύπου μάχης στην ευρωπαϊκή τέχνη που ανατέθηκαν από τον Leonardo Bartolini Salimbeni, ο οποίος συμμετείχε στη μάχη, απεικονίζουν στιγμές της μάχης των Φλωρεντινών με τους Σιένες, το 1432. Στον πίνακα, ένας ιππότης της Φλωρεντίας χτυπά τον αρχηγό του εχθρού Bernardino della Charda με ένα δόρυ <a href="https://gr.painting-planet.com/%CE%BC%CE%AC%CF%87%CE%B7-%CF%84%CE%BF%CF%85-%CF%83%CE%B1%CE%BD-%CF%81%CE%BF%CE%BC%CE%AC%CE%BD%CE%BF-paolo-uccello/" target="_blank">[6]</a>.</p>
 			<p id="en" class="w3-justify">The painting depicting the <b> Battle of San Romano </b> presented by quattrocento artist Paolo Uccello is one of three he wrote on the subject, focusing on the origins of the battle type in the assigned European art. by Leonardo Bartolini Salimbeni, who took part in the battle, depict moments of the Florentine battle with the Siena in 1432. In the painting, a Florentine knight strikes the enemy leader Bernardino della Charda with a spear <a href="https://gr.painting-planet.com/%CE%BC%CE%AC%CF%87%CE%B7-%CF%84%CE%BF%CF%85-%CF%83%CE%B1%CE%BD-%CF%81%CE%BF%CE%BC%CE%AC%CE%BD%CE%BF-paolo-uccello/" target="_blank">[6]</a>.</p>
 			<hr>
-			<div class="w3-tooltip">
-				<img width="900" height="510" src="../images/romano.jpg">
-				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Elias Rovielo: <a href="https://www.flickr.com/photos/eliasroviello/32366501074" target="_blank">The Battle of San Romano by Paolo Uccello</a></p>
-			</div>
+			<img class="responsive-iframe" width="100%" height="100%" src="../images/romano.jpg">
+			<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Elias Rovielo: <a href="https://www.flickr.com/photos/eliasroviello/32366501074" target="_blank">The Battle of San Romano by Paolo Uccello</a></p>
 			<hr>
             <p id="el" class="w3-justify">O ηγέτης των Φλωρεντινών Niccolo da Tolentino κάθεται σε ένα άσπρο άλογο, έχει ήδη γκρεμίσει έναν από τους εχθρούς στο έδαφος. Υπάρχει μια μάχη γύρω, “τα άλογα και οι άνθρωποι έχουν μπερδευτεί σε ένα σωρό”, πετούν λόγχες και τόξα, οι ιππότες πετούν τα όπλα τους στο έδαφος. Πολλοί χαρακτήρες τοποθετούνται σε μικρό χώρο και η σύνθεση περικόπτεται σκόπιμα στην άκρη του πλαισίου, γεγονός που καθιστά ολόκληρη τη σκηνή πιο κοντά, γεγονός που τονίζει επίσης ολόκληρη τη σκηνή.</p>
 			<p id="en" class="w3-justify">Florentine leader Niccolo da Tolentino is sitting on a white horse, he has already knocked down one of the enemies on the ground. There is a battle around, "horses and people are confused in a pile", spears and bows are thrown, knights throw their weapons on the ground. Many characters are placed in a small space and the composition is intentionally trimmed at the edge of the frame, which makes the whole scene closer, which also emphasizes the whole scene.</p>
@@ -90,7 +85,7 @@
 				<h3 id="el">Άρης και Αφροδίτη</h3>
 				<h3 id="en">Ares and Aphrodite</h3>
 				<a href="ares_and_aphrodite.html">
-				  <img src="../images/ares_and_aphrodite.jpg" alt="E-Boutique" width="380" height="300">
+				  <img src="../images/ares_and_aphrodite.jpg" alt="Ares and Aphrodite" width="380" height="300">
 				</a>
 			</div>
 			<!-- Youtube video -->
@@ -101,7 +96,7 @@
 				<h3 id="el">Μόνα Λίζα</h3>
 				<h3 id="en">Mona Lisa</h3>
 				<a href="mona_lisa.html">
-				  <img src="../images/mona.jpg" alt="E-Boutique" width="350" height="300">
+				  <img src="../images/mona.jpg" alt="Mona Lisa" width="350" height="300">
 				</a>
 				<hr>
 			</div>

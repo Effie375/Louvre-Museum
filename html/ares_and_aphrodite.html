@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 		<title>Άρης και Αφροδίτη</title>
 		<link rel="icon" href="../images/logo.ico" type="image/Iconic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -11,53 +12,49 @@
 		<script src="../js/language.js"></script>
 		<script src="../js/search.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu="return false">
 		<!-- Navigation -->
 		<nav class="w3-bar w3-camo-black">
-			<a id ="el" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Αρχική</a>
-			<a id ="en" href="../index.html" class="w3-button w3-bar-item"><i class="fa fa-home"></i> Home</a>
+			<!-- Home -->
+			<a href="../index.html" id="el" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Αρχική</a>
+			<a href="../index.html" id="en" class="w3-button w3-bar-item w3-mobile"><i class="fa fa-home"></i> Home</a>
 			<!-- Exhibits -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Εκθέματα</button>
-				<button id="en" class="w3-button">Exhibits</button>
-					<div class="w3-dropdown-content w3-bar-block w3-card-4">
-						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button">Αφροδίτη της Μήλου</a>
-						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button">Aphrodite of Milos</a>
-						<a id="el" href="nike.html" class="w3-bar-item w3-button">Nίκη της Σαμοθράκης</a>
-						<a id="en" href="nike.html" class="w3-bar-item w3-button">Victory of Samothrace</a>
-						<a id="el" href="artemis.html" class="w3-bar-item w3-button">Άρτεμις των Βερσαλλιών</a>
-						<a id="en" href="artemis.html" class="w3-bar-item w3-button">Diana of Versailles</a>
-					</div>		
-			</div>
+                <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Εκθέματα <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Exhibits <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Αφροδίτη της Μήλου</a>
+						<a id="en" href="aphrodite.html" class="w3-bar-item w3-button w3-mobile">Aphrodite of Milos</a>
+						<a id="el" href="nike.html" class="w3-bar-item w3-button w3-mobile">Nίκη της Σαμοθράκης</a>
+						<a id="en" href="nike.html" class="w3-bar-item w3-button w3-mobile">Victory of Samothrace</a>
+						<a id="el" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Άρτεμις των Βερσαλλιών</a>
+						<a id="en" href="artemis.html" class="w3-bar-item w3-button w3-mobile">Diana of Versailles</a>
+					</div>
+                </div>	
 			<!-- Work of arts -->
-			<div class="w3-dropdown-hover">
-				<button id="el" class="w3-button">Έργα Τέχνης</button>
-				<button id="en" class="w3-button">Work of arts</button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button">Μόνα Λίζα</a>
-					<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button">Mona Lisa</a>
-					<a id="el" href="romano.html" class="w3-bar-item w3-button">Μάχη του Σαν Ρομάνο</a>
-					<a id="en" href="romano.html" class="w3-bar-item w3-button">Battle of San Romano</a>
-					<a id="el" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Άρης και Αφροδίτη</a>
-					<a id="en" href="ares_and_aphrodite.html" class="w3-bar-item w3-button">Ares and Aphrodite</a>
-				</div>
-			</div>
+            <div class="w3-dropdown-hover w3-mobile">
+				<button id="el" class="w3-button w3-mobile">Έργα Τέχνης <i class="fa fa-caret-down"></i></button>
+				<button id="en" class="w3-button w3-mobile">Work of arts <i class="fa fa-caret-down"></i></button>
+				    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a id="el" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Μόνα Λίζα</a>
+						<a id="en" href="mona_lisa.html" class="w3-bar-item w3-button w3-mobile">Mona Lisa</a>
+						<a id="el" href="romano.html" class="w3-bar-item w3-button w3-mobile">Μάχη του Σαν Ρομάνο</a>
+						<a id="en" href="romano.html" class="w3-bar-item w3-button w3-mobile">Battle of San Romano</a>
+						<a id="el" class="w3-bar-item w3-button w3-mobile">Άρης και Αφροδίτη</a>
+						<a id="en" class="w3-bar-item w3-button w3-mobile">Ares and Aphrodite</a>
+					</div>
+            </div>
 			<!-- Contact -->
-			<a id="el" href="contact.html" class="w3-button w3-bar-item">Επικοινωνία <i class="fa fa-envelope"></i></a>
-			<a id="en" href="contact.html" class="w3-button w3-bar-item">Contact <i class="fa fa-envelope"></i></a>
-			<!-- Change language -->
-			<div class="w3-right">
-				<a class="button_lang current_lang w3-button w3-bar-item" id="el_click">Ελληνικά</a>
-				<a class="button_lang w3-button w3-bar-item" id="en_click">English</a>
-			</div>
-			<!-- Search -->
-			<div class="w3-right">
-				<form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
-					<input class="w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" type="text" id="t1" name="t1">
-					<input id="el" class="w3-bar-item w3-button" type="submit" name=b1 value="Αναζήτηση">
-					<input id="en" class="w3-bar-item w3-button" type="submit" name=b1 value="Search">
-				</form>
-			</div>
+			<a id="el" href="contact.html" class="w3-button w3-bar-item w3-mobile">Επικοινωνία <i class="fa fa-envelope"></i></a>
+			<a id="en" href="contact.html" class="w3-button w3-bar-item w3-mobile">Contact <i class="fa fa-envelope"></i></a>
+            <!-- Change language -->
+			<a class="button_lang current_lang w3-button w3-bar-item w3-mobile w3-right" id="el_click">Ελληνικά</a>
+			<a class="button_lang w3-button w3-bar-item w3-mobile w3-right" id="en_click">English</a>
+            <!-- Search -->
+            <form id="f1" name="f1" action="javascript:void()" onSubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+                <button class="w3-right w3-bar-item w3-button w3-mobile" type="submit" name=b1><i class="fa fa-search"></i></button>
+                <input class="w3-right w3-bar-item w3-input w3-white w3-border w3-border-black w3-mobile" placeholder="Search..." type="text" id="t1" name="t1">
+            </form>
 		</nav>
 		<!-- Description -->
 		<section class="w3-container w3-center w3-content" style="max-width:1000px">
@@ -65,7 +62,7 @@
 			<h1 id="el" class="w3-wide">
 				Άρης και Αφροδίτη (Ο Παρνασσός)
 				<audio id="player" src="../sounds/ares_and_aphrodite.mp3"></audio>
-				<div class="w3-right">
+				<div id="sound" class="w3-right">
 				<a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 				<a onclick="document.getElementById('player').pause()"><i class="fa fa-pause fa-2x"></i></a>
 				</div>
@@ -75,10 +72,8 @@
 			<p id="el" class="w3-justify">Η αγάπη του Andrea Mantegna για την τέχνη της αρχαιότητας ταιριάζει ιδανικά για τα γούστα και την υποτροφία της Isabella d’Este. Η ζωγραφική σε μυθολογικά θέματα εκείνη την εποχή σπάνια γινόταν το αντικείμενο μιας εικόνας. Το πιο ενδιαφέρον για τον καλλιτέχνη ήταν να στραφεί στους αγαπημένους του χαρακτήρες. Το θέμα του <b>Άρη και της Αφροδίτης</b>, που επέλεξε ο καλλιτέχνης, άρεσε πολύ στην Isabella <a href="https://gr.painting-planet.com/%CE%AC%CF%81%CE%B7%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B1%CF%86%CF%81%CE%BF%CE%B4%CE%AF%CF%84%CE%B7-%CE%AE-%CF%80%CE%B1%CF%81%CE%BD%CE%B1%CF%83%CF%83%CF%8C%CF%82-%CE%B1%CE%BD%CF%84%CF%81%CE%AD%CE%B1-%CE%BC/" target="_blank">[7]</a>.</p>
 			<p id="en" class="w3-justify">Andrea Mantegna's love of the art of antiquity is perfect for Isabella d’Este's tastes and scholarship. Mythological painting at that time rarely became the object of an image. The most interesting thing for the artist was to turn to his favorite characters. Isabella really liked the theme of <b>Ares and Aphrodite</b>, chosen by the artist <a href="https://gr.painting-planet.com/%CE%AC%CF%81%CE%B7%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B1%CF%86%CF%81%CE%BF%CE%B4%CE%AF%CF%84%CE%B7-%CE%AE-%CF%80%CE%B1%CF%81%CE%BD%CE%B1%CF%83%CF%83%CF%8C%CF%82-%CE%B1%CE%BD%CF%84%CF%81%CE%AD%CE%B1-%CE%BC/" target="_blank">[7]</a>.</p>
 			<hr>
-			<div class="w3-tooltip">
-				<img width="900" height="510" src="../images/ares_and_aphrodite.jpg">
+			<img class="responsive-iframe" width="100%" height="100%" src="../images/ares_and_aphrodite.jpg">
 				<p class="w3-text w3-light-grey"><i class="fa fa-camera"></i> Jean Louis Mazieres: <a href="https://www.flickr.com/photos/mazanto/31409941311" target="_blank">The Parnassus or Mars and Venus Louvre</a></p>
-			</div>
 			<hr>
             <p id="el" class="w3-justify">Η συνάντηση των ηρώων πραγματοποιείται κοντά στο κρεβάτι που είναι υψωμένο σε ένα πέτρινο βάθρο με φόντο ένα ανοιχτό τοπίο. Οι εικόνες του Ερμή και του Πήγασου υποδηλώνουν ότι την ημέρα του γάμου της Isabella τον Φεβρουάριο του 1490, τα ουράνια σώματα με το ίδιο όνομα Άρης και Αφροδίτη πιθανότατα να συμβολίζουν τη νύφη και τον γαμπρό.</p>
 			<p id="en" class="w3-justify">The meeting of the heroes takes place near the bed that is raised on a stone pedestal against the backdrop of an open landscape. The images of Mercury and Pegasus suggest that on Isabella's wedding day in February 1490, the celestial bodies of the same name Mars and Venus probably symbolize the bride and groom.</p>
@@ -92,7 +87,7 @@
 				<h3 id="el">Μόνα Λίζα</h3>
 				<h3 id="en">Mona Lisa</h3>
 				<a href="mona_lisa.html">
-				  <img src="../images/mona.jpg" alt="E-Boutique" width="350" height="300">
+					<img src="../images/mona.jpg" alt="Mona Lisa" width="350" height="300">
 				</a>
 			</div>
 			<!-- Youtube video -->
@@ -104,7 +99,7 @@
 				<h3 id="el">Η Μάχη του Σαν Ρομάνο</h3>
 				<h3 id="en">Battle of San Romano</h3>
 				<a href="romano.html">
-				  <img src="../images/romano.jpg" alt="E-Boutique" width="380" height="300">
+				  <img src="../images/romano.jpg" alt="Battle of San Romano" width="380" height="300">
 				</a>
 				<hr>
 			</div>
